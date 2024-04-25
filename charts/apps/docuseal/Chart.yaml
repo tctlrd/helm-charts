@@ -1,15 +1,19 @@
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: update docuseal/docuseal docker tag to v1.5.2
+      description: update docuseal/docuseal docker tag to latest
 apiVersion: v2
-appVersion: "v1.5.2"
+appVersion: "latest"
 dependencies:
   - name: common
-    repository: https://zekker6.github.io/helm-charts
-    version: 0.5.1
+    repository: https://tctlrd.github.io/helm-charts
+    version: 0.5.2
+  - condition: postgresql.enabled
+    name: postgresql
+    repository: https://charts.bitnami.com/bitnami
+    version: 16.x
 description: docuseal helm package
-home: https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+home: https://github.com/tctlrd/helm-charts/tree/main/charts/apps/docuseal
 icon: https://www.docuseal.co/favicon-32x32.png
 keywords:
   - pdf-signature
@@ -23,5 +27,5 @@ maintainers:
 name: docuseal
 sources:
   - https://github.com/docusealco/docuseal
-  - https://github.com/zekker6/helm-charts/tree/master/charts/apps/docuseal
+  - https://github.com/tctlrd/helm-charts/tree/main/charts/apps/docuseal
 version: 1.30.0
