@@ -7,7 +7,7 @@ appVersion: "1.5.3"
 dependencies:
   - name: common
     repository: https://tctlrd.github.io/helm-charts
-    version: 0.5.2
+    version: 0.5.1
   - condition: postgresql.enabled
     name: postgresql
     repository: https://charts.bitnami.com/bitnami
