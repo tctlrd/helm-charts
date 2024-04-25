@@ -3,7 +3,7 @@ annotations:
     - kind: changed
       description: update docuseal/docuseal docker tag to latest
 apiVersion: v2
-appVersion: "latest"
+appVersion: "1.5.3"
 dependencies:
   - name: common
     repository: https://tctlrd.github.io/helm-charts
